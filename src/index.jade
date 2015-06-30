@@ -1,0 +1,173 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Drop Wizard
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section
+        div(style="display: inline-block")
+          img.right(src="images/dw.png" width="150px")
+        br
+        h2(style="font-size: 250%;")
+          span Drop Wizard
+        span.small 0.7.1
+        br
+
+      section
+        br
+        br
+        h2 Quick Intro
+        li
+        li Rob Pocklington
+        li Full-stack developer my whole career (12 years)
+        li
+          | been using <span style="color: #6699ff">Java</span> since University
+        li <br>
+          | <span style="color: #99cc00">Scala</span> for 6 months (hated it)
+        li
+          | <span style="color: #00cc66">Groovy</span> for 2 years (loved it)
+        br
+        br
+        br
+        br
+        br
+        br
+
+      section
+        br
+        h2 Overview
+        li
+        li Work Situation
+        li Running locally
+        li Deploying it
+        li Testing it
+        li
+        li Strengths
+        li Weaknesses
+        li Performance
+        li
+
+      section
+        h2 Setting the scene
+        li
+        li Greenfields project
+        li
+        li what's our stack?
+        li &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;work it out!
+        li
+
+      section
+        li
+        h2 Goals
+        li
+        li &nbsp;&nbsp;Write and run code
+        li &nbsp;&nbsp;Write and run tests
+        li &nbsp;&nbsp;Package and run artifact
+        li &nbsp;&nbsp;Automate
+        li
+        li &nbsp;&nbsp;Debug
+        li &nbsp;&nbsp;Performance test
+        li &nbsp;&nbsp;Objective choice
+        li
+        li
+
+      section
+        h2 Out of ballpark
+        li
+        li Complex Authentication
+        li Complex Orchestration
+        li Large units of work-per-request
+        li Vert.x / Play / Grails / Spring MVC / Struts
+        li J2EE / JBoss / Websphere
+        li
+        li
+
+      section
+        h2 Wish List
+        li
+        li Productive
+        li.small(style="color: #99ccdd") Java 8
+        li.small(style="color: #aaccff") Simple validation
+        li.small(style="color: #00cc66") Separation of concerns
+        li.small(style="color: #00ffaa") DB Integration
+        li.small(style="color: #aacc99") Test framework support
+        li.small(style="color: #ddeecc") Ecosystem support (Maven / Gradle)
+        li.small(style="color: #ddeecc") API Docs / Metrics / Healthchecks
+
+      section
+        h2 Running it Locally
+        li
+        li
+          | <span style="color: #00cc66">#win</span> or <span style="color: #ffaa99">#fail</span>
+        li
+        li Result
+        li
+          | <span style="color: #cc99ff">awesome!</span>
+
+      section
+        h2 Testing it
+        li
+        li JUnit, Rest Assured, Mockito
+        li JSON Schema Validation
+        li H2 Database
+        li
+        li
+        li
+
+      section
+        h2 Deploying it
+        li
+        li Make <span style="color: #ffaaee">Jar</span> not <span style="color: #cc99ff">War</span>
+        li DB Migrations - Liquibase
+        li
+        li To run:
+        li <code>java -jar app.jar server production.yml</code>
+        li
+
+      section
+        h2 Learnings
+        li
+        li API and Workflow tests
+        li Separate view and DB model POJOS
+        li Create: re-read from DB may be required
+        li Liquibase requires an artifact
+        li
+        li
+
+      section
+        h2 Strengths
+        li
+        li Productive and simple
+        li Build it up as needed
+        li Fast and performant
+        li Good eco-system support
+        li JDBI keeps SQL transparent
+        li
+        li Great choice for small or micro-services
+
+      section
+        h2 Weaknesses
+        li
+        li Lack of batch inserts with JDBI
+        li Lack of multi-resource transaction scope
+        li
+        li Enforces separation of Resources
+        li so, need to consider urls as part of design
+        li
+        li No OOTB dependency injection
+        li so, less support from Camel / RabbitMQ
+
+      section
+        h2(style="color: #aa99ff") Questions?
+        br
+        br
+        br
+
+    script(src='build/build.js')

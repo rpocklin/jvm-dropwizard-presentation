@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Drop Wizard</title>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section>
+        <div style="display: inline-block"><img src="images/dw.png" width="150px" class="right"></div><br>
+        <h2 style="font-size: 250%;"><span>Drop Wizard</span></h2><span class="small">0.7.1</span><br>
+      </section>
+      <section><br><br>
+        <h2>Quick Intro</h2>
+        <li></li>
+        <li>Rob Pocklington</li>
+        <li>Full-stack developer my whole career (12 years)</li>
+        <li>been using <span style="color: #6699ff">Java</span> since University</li>
+        <li>
+          <br>
+          <span style="color: #99cc00">Scala</span> for 6 months (hated it)
+        </li>
+        <li><span style="color: #00cc66">Groovy</span> for 2 years (loved it)</li><br><br><br><br><br><br>
+      </section>
+      <section><br>
+        <h2>Overview</h2>
+        <li></li>
+        <li>Work Situation</li>
+        <li>Running locally</li>
+        <li>Deploying it</li>
+        <li>Testing it</li>
+        <li></li>
+        <li>Strengths</li>
+        <li>Weaknesses</li>
+        <li>Performance</li>
+        <li></li>
+      </section>
+      <section>
+        <h2>Setting the scene</h2>
+        <li></li>
+        <li>Greenfields project</li>
+        <li></li>
+        <li>what's our stack?</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;work it out!</li>
+        <li></li>
+      </section>
+      <section>
+        <li></li>
+        <h2>Goals</h2>
+        <li></li>
+        <li>&nbsp;&nbsp;Write and run code</li>
+        <li>&nbsp;&nbsp;Write and run tests</li>
+        <li>&nbsp;&nbsp;Package and run artifact</li>
+        <li>&nbsp;&nbsp;Automate</li>
+        <li></li>
+        <li>&nbsp;&nbsp;Debug</li>
+        <li>&nbsp;&nbsp;Performance test</li>
+        <li>&nbsp;&nbsp;Objective choice</li>
+        <li></li>
+        <li></li>
+      </section>
+      <section>
+        <h2>Out of ballpark</h2>
+        <li></li>
+        <li>Complex Authentication</li>
+        <li>Complex Orchestration</li>
+        <li>Large units of work-per-request</li>
+        <li>Vert.x / Play / Grails / Spring MVC / Struts</li>
+        <li>J2EE / JBoss / Websphere</li>
+        <li></li>
+        <li></li>
+      </section>
+      <section>
+        <h2>Wish List</h2>
+        <li></li>
+        <li>Productive</li>
+        <li style="color: #99ccdd" class="small">Java 8</li>
+        <li style="color: #aaccff" class="small">Simple validation</li>
+        <li style="color: #00cc66" class="small">Separation of concerns</li>
+        <li style="color: #00ffaa" class="small">DB Integration</li>
+        <li style="color: #aacc99" class="small">Test framework support</li>
+        <li style="color: #ddeecc" class="small">Ecosystem support (Maven / Gradle)</li>
+        <li style="color: #ddeecc" class="small">API Docs / Metrics / Healthchecks</li>
+      </section>
+      <section>
+        <h2>Running it Locally</h2>
+        <li></li>
+        <li><span style="color: #00cc66">#win</span> or <span style="color: #ffaa99">#fail</span></li>
+        <li></li>
+        <li>Result</li>
+        <li><span style="color: #cc99ff">awesome!</span></li>
+      </section>
+      <section>
+        <h2>Testing it</h2>
+        <li></li>
+        <li>JUnit, Rest Assured, Mockito</li>
+        <li>JSON Schema Validation</li>
+        <li>H2 Database</li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </section>
+      <section>
+        <h2>Deploying it</h2>
+        <li></li>
+        <li>Make <span style="color: #ffaaee">Jar</span> not <span style="color: #cc99ff">War</span></li>
+        <li>DB Migrations - Liquibase</li>
+        <li></li>
+        <li>To run:</li>
+        <li><code>java -jar app.jar server production.yml</code></li>
+        <li></li>
+      </section>
+      <section>
+        <h2>Learnings</h2>
+        <li></li>
+        <li>API and Workflow tests</li>
+        <li>Separate view and DB model POJOS</li>
+        <li>Create: re-read from DB may be required</li>
+        <li>Liquibase requires an artifact</li>
+        <li></li>
+        <li></li>
+      </section>
+      <section>
+        <h2>Strengths</h2>
+        <li></li>
+        <li>Productive and simple</li>
+        <li>Build it up as needed</li>
+        <li>Fast and performant</li>
+        <li>Good eco-system support</li>
+        <li>JDBI keeps SQL transparent</li>
+        <li></li>
+        <li>Great choice for small or micro-services</li>
+      </section>
+      <section>
+        <h2>Weaknesses</h2>
+        <li></li>
+        <li>Lack of batch inserts with JDBI</li>
+        <li>Lack of multi-resource transaction scope</li>
+        <li></li>
+        <li>Enforces separation of Resources</li>
+        <li>so, need to consider urls as part of design</li>
+        <li></li>
+        <li>No OOTB dependency injection</li>
+        <li>so, less support from Camel / RabbitMQ</li>
+      </section>
+      <section>
+        <h2 style="color: #aa99ff">Questions?</h2><br><br><br>
+      </section>
+    </article>
+    <script src="build/build.js"></script>
+  </body>
+</html>
