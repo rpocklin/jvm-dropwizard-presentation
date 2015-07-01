@@ -44,10 +44,11 @@ html
         br
         h2 Overview
         li
-        li Work Situation
-        li Running locally
-        li Deploying it
-        li Testing it
+        li Setting the stage
+        li Dropwizard from 50,000 feet
+        li &nbsp;&nbsp;Running locally
+        li &nbsp;&nbsp;Deploying
+        li &nbsp;&nbsp;Testing
         li
         li Strengths
         li Weaknesses
@@ -55,7 +56,7 @@ html
         li
 
       section
-        h2 Setting the scene
+        h2 Setting the stage
         li
         li Greenfields project
         li
@@ -65,7 +66,7 @@ html
 
       section
         li
-        h2 Goals
+        h2 Evaluation Goals
         li
         li &nbsp;&nbsp;Write and run code
         li &nbsp;&nbsp;Write and run tests
@@ -102,14 +103,23 @@ html
         li.small(style="color: #ddeecc") API Docs / Metrics / Healthchecks
 
       section
+        h2 From 50,000 feet
+        li
+        li No Hibernate
+        li No Spring
+        li No DI
+        li Jetty, Jersey, Jackson, Hibernate Validations
+        li JDBI, Liquibase
+        li Packaged as a single JAR<br><br>
+        li <code>public static void main() {..}</code>
+        li
+
+      section
         h2 Running it Locally
         li
-        li
-          | <span style="color: #00cc66">#win</span> or <span style="color: #ffaa99">#fail</span>
-        li
-        li Result
-        li
-          | <span style="color: #cc99ff">awesome!</span>
+        li 5 - 10 seconds to startup
+        li great support for CLI
+        li Debugging is soo easy!
 
       section
         h2 Testing it
@@ -125,6 +135,7 @@ html
         h2 Deploying it
         li
         li Make <span style="color: #ffaaee">Jar</span> not <span style="color: #cc99ff">War</span>
+        li small JAR ( approx 27MB )
         li DB Migrations - Liquibase
         li
         li To run:
@@ -156,13 +167,16 @@ html
         h2 Weaknesses
         li
         li Lack of batch inserts with JDBI
-        li Lack of multi-resource transaction scope
+        li Multi-resource transaction scope is tricky
         li
         li Enforces separation of Resources
         li so, need to consider urls as part of design
         li
         li No OOTB dependency injection
         li so, less support from Camel / RabbitMQ
+
+      section
+        h2 Performance
 
       section
         h2(style="color: #aa99ff") Questions?

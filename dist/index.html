@@ -27,10 +27,11 @@
       <section><br>
         <h2>Overview</h2>
         <li></li>
-        <li>Work Situation</li>
-        <li>Running locally</li>
-        <li>Deploying it</li>
-        <li>Testing it</li>
+        <li>Setting the stage</li>
+        <li>Dropwizard from 50,000 feet</li>
+        <li>&nbsp;&nbsp;Running locally</li>
+        <li>&nbsp;&nbsp;Deploying</li>
+        <li>&nbsp;&nbsp;Testing</li>
         <li></li>
         <li>Strengths</li>
         <li>Weaknesses</li>
@@ -38,7 +39,7 @@
         <li></li>
       </section>
       <section>
-        <h2>Setting the scene</h2>
+        <h2>Setting the stage</h2>
         <li></li>
         <li>Greenfields project</li>
         <li></li>
@@ -48,7 +49,7 @@
       </section>
       <section>
         <li></li>
-        <h2>Goals</h2>
+        <h2>Evaluation Goals</h2>
         <li></li>
         <li>&nbsp;&nbsp;Write and run code</li>
         <li>&nbsp;&nbsp;Write and run tests</li>
@@ -85,12 +86,23 @@
         <li style="color: #ddeecc" class="small">API Docs / Metrics / Healthchecks</li>
       </section>
       <section>
+        <h2>From 50,000 feet</h2>
+        <li></li>
+        <li>No Hibernate</li>
+        <li>No Spring</li>
+        <li>No DI</li>
+        <li>Jetty, Jersey, Jackson, Hibernate Validations</li>
+        <li>JDBI, Liquibase</li>
+        <li>Packaged as a single JAR<br><br></li>
+        <li><code>public static void main() {..}</code></li>
+        <li></li>
+      </section>
+      <section>
         <h2>Running it Locally</h2>
         <li></li>
-        <li><span style="color: #00cc66">#win</span> or <span style="color: #ffaa99">#fail</span></li>
-        <li></li>
-        <li>Result</li>
-        <li><span style="color: #cc99ff">awesome!</span></li>
+        <li>5 - 10 seconds to startup</li>
+        <li>great support for CLI</li>
+        <li>Debugging is soo easy!</li>
       </section>
       <section>
         <h2>Testing it</h2>
@@ -106,6 +118,7 @@
         <h2>Deploying it</h2>
         <li></li>
         <li>Make <span style="color: #ffaaee">Jar</span> not <span style="color: #cc99ff">War</span></li>
+        <li>small JAR ( approx 27MB )</li>
         <li>DB Migrations - Liquibase</li>
         <li></li>
         <li>To run:</li>
@@ -137,13 +150,16 @@
         <h2>Weaknesses</h2>
         <li></li>
         <li>Lack of batch inserts with JDBI</li>
-        <li>Lack of multi-resource transaction scope</li>
+        <li>Multi-resource transaction scope is tricky</li>
         <li></li>
         <li>Enforces separation of Resources</li>
         <li>so, need to consider urls as part of design</li>
         <li></li>
         <li>No OOTB dependency injection</li>
         <li>so, less support from Camel / RabbitMQ</li>
+      </section>
+      <section>
+        <h2>Performance</h2>
       </section>
       <section>
         <h2 style="color: #aa99ff">Questions?</h2><br><br><br>
